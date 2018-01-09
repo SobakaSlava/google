@@ -12,12 +12,11 @@ header {
 }
 .apps {
     margin-left: 15px;
-    background-image: url('./img/appsH.png');
-    background-repeat: no-repeat;
+    background: url('./img/appsH.png') no-repeat center center;
     opacity: .55;
     height: 30px;
     width: 30px;
-    background-position: center center;
+
 }
 .apps:hover {
     opacity: .85;
@@ -45,6 +44,12 @@ header {
     justify-content: center;
     margin: 0 15px;
 }
+.sign-in:hover {
+    cursor: default;
+}
+.sign-in:active {
+    background-color: #3c7ae4;
+}
 .head-buttons-text {
     position: relative;
     top: 7px;
@@ -67,12 +72,12 @@ body {
     align-items: center;
 }
 main {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -40.9%;
+    top: 143px;
 }
 .googleimg {
     position: relative;
@@ -103,6 +108,7 @@ main {
     top: 31px;
 }
 .button {
+    position: relative;
     background-color: #f2f2f2;
     font-size: 13px;
     font-weight: bold;
@@ -111,7 +117,7 @@ main {
     border-radius: 2px;
     height: 36px;
     margin: 0 4px;
-    padding: 0 16px;
+    padding: 1px 16px 0 16px;
     min-width: 54px;
 }
 .button:hover{
@@ -144,13 +150,11 @@ main {
     display: flex;
     height: 19px;
     width: 11px;
-    background-image: url('./img/keyboardH.png');
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url('./img/keyboardH.png') no-repeat center center;
     padding-left: 35px;
     right: 3px;
     opacity: 0.6;
-    bottom: 1px;
+    top: -1px;
 }
 .keyboard:hover {
     opacity:0.8;
@@ -159,13 +163,11 @@ main {
 .microphone {
     position: relative;
     left: 2px;
-    top: -1px;
     height: 2345px;
     width: 24px;
-    background-image: url('./img/micro.png');
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url('./img/micro.png') no-repeat center center;
     background-size: contain;
+    top: -1px;
 
 }
 footer {
@@ -202,7 +204,6 @@ footer {
     color: #666;
     font-size: 13px;
     line-height: 40px;
-    /*padding-right: 10px;*/
 }
 .footer-bottom-left-text:hover {
     text-decoration: underline;
@@ -222,5 +223,4 @@ footer {
     margin-bottom: 2px;
     font-size: 15px;
     color: rgba(0,0,0,.54);
-    /*padding-left: 5px;*/
 }

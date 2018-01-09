@@ -5,6 +5,7 @@
       <title>Google</title>
       <link rel="stylesheet" href="./styles.css">
       <link rel="shortcut icon" href="./img/google.ico">
+      <script src="script.js"></script>
     </head>
     <body>
       <header>
@@ -12,7 +13,7 @@
           <a class="head-buttons-text" href="https://mail.google.com/mail/?tab=wm">Почта</a>
           <a class="head-buttons-text" href="https://www.google.by/imghp?hl=ru&tab=wi">Картинки</a>
           <a class="apps"></a>
-          <a class="sign-in" href="#">Войти</a>
+          <a class="sign-in" onclick="signin()" href="#">Войти</a>
         </div>
       </header>
       <main>
@@ -26,7 +27,7 @@
         </div>
         <div class="main-buttons">
         <button class="button" type="button" name="button">Поиск в Google</button>
-        <button class="button" type="button" name="button">Мне повезёт!</button>
+        <button class="button" onclick="lucky()" type="button" name="button">Мне повезёт!</button>
         </div>
       </main>
       <footer>
