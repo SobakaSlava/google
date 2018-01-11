@@ -13,115 +13,119 @@
           <a class="head-buttons-text" href="https://mail.google.com/mail/?tab=wm">Почта</a>
           <a class="head-buttons-text" href="https://www.google.by/imghp?hl=ru&tab=wi">Картинки</a>
           <a id="appsimg" onclick="appsStatusChange()"></a>
-          <div class="apps-div">
+          <div class="apps-div" id="apps-div">
             <div id="appsSheet" class="apps-table">
               <div class="apps-item">
-                <a href="https://myaccount.google.com">
+                <a href="https://myaccount.google.com" class="app">
                   <div class="apps-img" id="accountapp"></div>
                   <span class="apps-txt">Мой аккаунт</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://www.google.by/webhp?tab=ww&authuser=0">
+                <a href="https://www.google.by/webhp?tab=ww&authuser=0" class="app">
                   <div class="apps-img" id="searchapp"></div>
                   <span class="apps-txt">Поиск</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://www.google.by/maps/">
+                <a href="https://www.google.by/maps/" class="app">
                   <div class="apps-img" id="mapsapp"></div>
                   <span class="apps-txt">Карты</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://www.youtube.com/?gl=BY">
+                <a href="https://www.youtube.com/?gl=BY" class="app">
                   <div class="apps-img" id="youtubeapp"></div>
                   <span class="apps-txt">YouTube</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://play.google.com/store?hl=ru&tab=w8">
+                <a href="https://play.google.com/store?hl=ru&tab=w8" class="app">
                   <div class="apps-img" id="playapp"></div>
                   <span class="apps-txt">Play</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://mail.google.com/mail/?tab=wm&authuser=0">
+                <a href="https://mail.google.com/mail/?tab=wm&authuser=0" class="app">
                   <div class="apps-img" id="mailapp"></div>
                   <span class="apps-txt">Почта</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://drive.google.com/drive/u/0/?tab=wo">
+                <a href="https://drive.google.com/drive/u/0/?tab=wo" class="app">
                   <div class="apps-img" id="driveapp"></div>
                   <span class="apps-txt">Диск</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://www.google.com/calendar?tab=wc&authuser=0">
+                <a href="https://www.google.com/calendar?tab=wc&authuser=0" class="app">
                   <div class="apps-img" id="calendarapp"></div>
                   <span class="apps-txt">Календарь</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://plus.google.com/u/0/discover">
+                <a href="https://plus.google.com/u/0/discover" class="app">
                   <div class="apps-img" id="plusapp"></div>
                   <span class="apps-txt">Google+</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://translate.google.by">
+                <a href="https://translate.google.by" class="app">
                   <div class="apps-img" id="translateapp"></div>
                   <span class="apps-txt">Переводчик</span>
                 </a>
               </div>
               <div class="apps-item">
-                <a href="https://photos.google.com/?pageId=none">
+                <a href="https://photos.google.com/?pageId=none" class="app">
                   <div class="apps-img" id="photosapp"></div>
                   <span class="apps-txt">Фото</span>
                 </a>
               </div>
-              <div id="moreAppsSheet" class="apps-table">
-                <div class="apps-item">
-                  <a href="https://docs.google.com/document/u/0">
-                    <div class="apps-img" id="docsapp"></div>
-                    <span class="apps-txt">Документы</span>
-                  </a>
-                </div>
-                <div class="apps-item">
-                  <a href="https://www.blogger.com/about/?r=1-null_user">
-                    <div class="apps-img" id="bloggerapp"></div>
-                    <span class="apps-txt">Blogger</span>
-                  </a>
-                </div>
-                <div class="apps-item">
-                  <a href="https://contacts.google.com">
-                    <div class="apps-img" id="contactsapp"></div>
-                    <span class="apps-txt">Контакты</span>
-                  </a>
-                </div>
-                <div class="apps-item">
-                  <a href="https://hangouts.google.com/?authuser=0">
-                    <div class="apps-img" id="hangoutsapp"></div>
-                    <span class="apps-txt">Hangouts</span>
-                  </a>
-                </div>
-                <div class="apps-item">
-                  <a href="https://keep.google.com/u/0">
-                    <div class="apps-img" id="keepapp"></div>
-                    <span class="apps-txt">Google Keep</span>
-                  </a>
-                </div>
-                <div class="apps-item">
-                  <a href="https://earth.google.com/static/9.2.47.8/app_min__ru.html?authuser=0">
+              <div class="more">
+                <div id="moreAppsSheet" class="apps-table">
+                  <div class="apps-item">
+                    <a href="https://docs.google.com/document/u/0" class="app">
+                      <div class="apps-img" id="docsapp"></div>
+                      <span class="apps-txt">Документы</span>
+                    </a>
+                  </div>
+                  <div class="apps-item">
+                    <a href="https://www.blogger.com/about/?r=1-null_user" class="app">
+                      <div class="apps-img" id="bloggerapp"></div>
+                      <span class="apps-txt">Blogger</span>
+                    </a>
+                  </div>
+                  <div class="apps-item">
+                    <a href="https://contacts.google.com" class="app">
+                      <div class="apps-img" id="contactsapp"></div>
+                      <span class="apps-txt">Контакты</span>
+                    </a>
+                  </div>
+                  <div class="apps-item">
+                    <a href="https://hangouts.google.com/?authuser=0" class="app">
+                      <div class="apps-img" id="hangoutsapp"></div>
+                      <span class="apps-txt">Hangouts</span>
+                    </a>
+                  </div>
+                  <div class="apps-item">
+                    <a href="https://keep.google.com/u/0" class="app">
+                      <div class="apps-img" id="keepapp"></div>
+                      <span class="apps-txt">Google Keep</span>
+                    </a>
+                  </div>
+                  <div class="apps-item" id="earth">
+                    <a href="https://earth.google.com/static/9.2.47.8/app_min__ru.html?authuser=0" class="app" id="earthhref">
                     <div class="apps-img" id="earthapp"></div>
-                    <span class="apps-txt">Планета Земля</span>
-                  </a>
+                    <span class="apps-txt" id="earth-text">Планета Земля</span>
+                    </a>
+                  </div>
+                  <div id="other-services">
+                    <a id="other-services-btn" href="https://www.google.by/intl/ru/about/products/">Другие сервисы Google</a>
+                  </div>
                 </div>
-                <a id="other-services" href="https://www.google.by/intl/ru/about/products/">Другие сервисы Google</a>
               </div>
             </div>
-            <a id="moreApps-btn" onclick="more()">Ещё</a>
+            <a id="moreApps-btn" onclick="more('open')">Ещё</a>
           </div>
           <a class="sign-in" href="https://accounts.google.com/ServiceLogin?hl=ru&passive=true&continue=https://www.google.ru/">Войти</a>
         </div>

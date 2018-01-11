@@ -23,35 +23,38 @@ function search(e) {
 function appsStatusChange() {
   clickOnApps = true;
   isAppsVisible = !isAppsVisible;
-  let appsSheet = document.getElementById("appsSheet");
+  let appsDiv = document.getElementById("apps-div");
   if (isAppsVisible) {
-    appsSheet.style.display = 'flex';
-    appsSheet.style.overflow = 'hidden';
+    appsDiv.style.display = 'block';
+    appsDiv.style.overflow = 'hidden';
   }
   else {
-    appsSheet.style.display = 'none';
-    more();
+    appsDiv.style.display = 'none';
+    more('close');
   }
 }
 
-function more () {
-  clickOnMore = true;
-  isMoreVisible = !isMoreVisible;
+function more (mode) {
   let moreBtn = document.getElementById("moreApps-btn");
   let appsSheet = document.getElementById("appsSheet");
-  let moreAppsSheet = document.getElementById('moreAppsSheet')
-  if (isMoreVisible) {
+  let moreAppsSheet = document.getElementById('moreAppsSheet');
+  let otherServices = document.getElementById('other-services');
+  if (mode == 'close') {
+    moreBtn.style.display = 'flex';
+    moreAppsSheet.style.display = 'none';
+    appsSheet.style.overflowY = 'hidden';
+    appsSheet.style.height = '400px';
+    otherServices.style.display = 'none';
+  }
+  if (mode == 'open') {
     moreBtn.style.display = 'none';
-    appsSheet.style.overflowX = 'hidden';
     appsSheet.style.overflowY = 'scroll';
     appsSheet.style.height = '440px';
     appsSheet.style.width = '279px';
     appsSheet.style.paddingRight = '13px';
     moreAppsSheet.style.display = 'flex';
-    appsSheet.scrollTop = 10000;
-  }
-  else {
-    moreBtn.style.display = 'block';
-    moreAppsSheet.style.display = 'none';
+    appsSheet.scrollTop = appsSheet.scrollHeight;
+    otherServices.style.display = 'flex';
   }
 }
+

@@ -22,12 +22,6 @@ header {
     opacity: .85;
     cursor: pointer;
 }
-#moreAppsSheet {
-    display: none;
-    padding: 0;
-    margin-top: 20px;
-    border-top: 1px solid;
-}
 .head-buttons {
     position: absolute;
     margin-right: 30px;
@@ -231,6 +225,13 @@ footer {
     font-size: 15px;
     color: rgba(0,0,0,.54);
 }
+#moreAppsSheet {
+    display: none;
+    padding: 27px 0 8px 0;
+    margin: 30px 0 30px -2px;
+    border-top: 1px solid;
+    border-color: rgba(0,0,0,.1);
+}
 .apps-table {
     display: flex;
     flex-wrap: wrap;
@@ -239,16 +240,20 @@ footer {
     padding: 28px;
     position: relative;
     bottom: 1px;
-    left: 1px;
+    left: 2px;
+    margin-right: 1px;
+    padding-left: 27px;
 }
 .apps-item {
-    flex-basis: 86px;
-    height: 98px;
+    position: relative;
+    top: 2px;
+    flex-basis: 84px;
+    height: 84px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 1px;
+    margin: 8px 2px;
     font-size: 13px;
     text-align: center;
 }
@@ -257,13 +262,12 @@ footer {
     text-align: center;
     height: 64px;
     width: 64px;
-    background-image: url("./img/backgroundApps.png");
-    background-repeat: no-repeat;
+    background: no-repeat url("./img/backgroundApps.png") ;
 }
 .apps-item:hover {
-    border: solid 1px rgba(0,0,0,.2);
+    border: solid 1px rgba(0,0,0,.1);
     border-radius: 2px;
-    padding: 0;
+    margin: 7px 1px 1px 1px;
 }
 #moreApps-btn {
     position: relative;
@@ -275,6 +279,7 @@ footer {
     background-color: #f5f5f5;
     font-size: 13px;
     color: rgba(0,0,0,0.87);
+    cursor: pointer;
 }
 .apps-div {
     border: 1px solid #ccc;
@@ -283,15 +288,116 @@ footer {
     position: absolute;
     top: 44px;
     right: 15px;
-    /*display: none;*/
+    display: none;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     height: 496px;
-
 }
 .apps-txt {
     color: rgba(0,0,0,0.87);
-
+    width: 100%;
 }
 #accountapp {
-    background-position: 0 -1240px;
+    background-position: 0 -344px;
+}
+#searchapp {
+    background-position: 0 -482px;
+}
+#mapsapp {
+    background-position: 0 -1586px;
+}
+#youtubeapp {
+    background-position: 0 -2138px;
+}
+#playapp {
+    background-position: 0 -2276px;
+}
+#mailapp {
+    background-position: 0 -206px;
+}
+#driveapp {
+    background-position: 0 -1862px;
+}
+#calendarapp {
+    background-position: 0 -620px;
+}
+#plusapp {
+    background-position: 0 -413px;
+}
+#translateapp {
+    background-position: 0 -1931px;
+}
+#photosapp {
+    background-position: 0 -1310px;
+}
+#docsapp {
+    background-position: 0 -1793px;
+}
+#bloggerapp {
+    background-position: 0 -551px;
+}
+#contactsapp {
+    background-position: 0 -1448px;
+}
+#hangoutsapp{
+    background-position: 0 -137px;
+}
+#keepapp {
+    background: url("./img/keep.png") 0 1px;
+}
+#earth {
+    width: 84px;
+}
+#earthapp {
+    background-position: 0 -965px;
+    height: 64px;
+    text-overflow: ellipsis;
+}
+#earth:hover {
+    height: 102px;
+}
+#earth-text {
+    white-space: nowrap;
+    width: 84px;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+#earth:hover .apps-txt {
+    overflow: visible;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.5;
+}
+#earth:hover #earthapp {
+    position: relative;
+    top: 1px;
+}
+#earth:hover #other-services {
+    top: 12px;
+}
+#other-services-btn {
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);
+    justify-content: center;
+    position: relative;
+    top: 41px;
+    right: 1px;
+    margin-bottom: -14px;
+}
+#other-services-btn:hover {
+    text-decoration: underline;
+}
+#other-services {
+    display: none;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+.app {
+    position: relative;
+    bottom: 2px;
+}
+#earthhref {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 84px;
 }
