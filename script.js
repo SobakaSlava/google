@@ -4,7 +4,6 @@ let clickOnSettings = false;
 let isAppsVisible = false;
 let isMoreVisible = false;
 let isSettingsVisible = false;
-let e;
 
 function lucky() {
   location.href = "https://www.google.com/doodles";
@@ -53,11 +52,16 @@ function more (mode) {
     moreBtn.style.display = 'none';
     appsSheet.style.overflowY = 'scroll';
     appsSheet.style.height = '440px';
-    appsSheet.style.width = '279px';
-    appsSheet.style.paddingRight = '13px';
+    appsSheet.style.width = '281px';
+    appsSheet.style.paddingRight = '10px';
     moreAppsSheet.style.display = 'flex';
+    moreAppsSheet.style.marginTop = '30px';
+    moreAppsSheet.style.paddingLeft = '-2px';
     appsSheet.scrollTop = appsSheet.scrollHeight;
     otherServices.style.display = 'flex';
+    otherServices.style.marginTop = '-2px';
+    appsSheet.style.marginRight = '2px';
+    appsSheet.style.marginTop = '1px';
   }
 }
 

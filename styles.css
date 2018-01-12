@@ -5,9 +5,9 @@ html{
 }
 header {
     height: 40px;
-    position: relative;
-    top: -455px;
-    right: 7px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
     width: 100%;
     min-width: 980px;
 }
@@ -93,7 +93,7 @@ main {
     justify-content: center;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     border-radius: 2px;
-    min-width: 584px;
+    min-width: 585px;
     height: 44px;
     margin-top: 83px;
     bottom: 1px;
@@ -153,7 +153,7 @@ main {
     height: 19px;
     width: 11px;
     background: url('./img/keyboardH.png') no-repeat center center;
-    padding-left: 35px;
+    padding-left: 36px;
     right: 3px;
     opacity: 0.6;
     top: -1px;
@@ -170,7 +170,7 @@ main {
     background: url('./img/micro.png') no-repeat center center;
     background-size: contain;
     top: -1px;
-
+    margin-right: 1px;
 }
 footer {
     position: fixed;
@@ -239,13 +239,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    width: 264px;
-    padding: 28px;
+    width: 265px;
+    padding: 28px 28px 28px 26px;
     position: relative;
     bottom: 1px;
-    left: 2px;
-    margin-right: 1px;
-    padding-left: 27px;
+    left: 3px;
 }
 .apps-item {
     position: relative;
@@ -277,6 +275,7 @@ footer {
     display: flex;
     justify-content: center;
     bottom: 0;
+    margin-right: -1px;
     padding-top: 12px;
     padding-bottom: 13px;
     background-color: #f5f5f5;
@@ -291,7 +290,7 @@ footer {
     top: 44px;
     right: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    height: 495px;
+    height: 496px;
     margin-bottom: 1px;
     padding-right: 1px;
 }
@@ -368,6 +367,7 @@ footer {
 }
 #earth:hover #earthapp {
     position: relative;
+    top: 1px;
 }
 #earth:hover #other-services {
     top: 12px;
