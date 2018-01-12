@@ -69,7 +69,7 @@ function clickout () {
     clickOnApps = false;
     clickOnMore = false;
   }
-  if (settingsVisible && !clickOnSettings) {
+  if (isSettingsVisible && !clickOnSettings) {
     settings();
   }
   else {
