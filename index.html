@@ -7,7 +7,7 @@
       <link rel="shortcut icon" href="./img/google.ico">
       <script src="script.js"></script>
     </head>
-    <body>
+    <body onclick="clickout()">
       <header>
         <div class="head-buttons">
           <a class="head-buttons-text" href="https://mail.google.com/mail/?tab=wm">Почта</a>
@@ -119,10 +119,10 @@
                     <span class="apps-txt" id="earth-text">Планета Земля</span>
                     </a>
                   </div>
-                  <div id="other-services">
-                    <a id="other-services-btn" href="https://www.google.by/intl/ru/about/products/">Другие сервисы Google</a>
-                  </div>
                 </div>
+              </div>
+              <div id="other-services">
+                <a id="other-services-btn" href="https://www.google.by/intl/ru/about/products/">Другие сервисы Google</a>
               </div>
             </div>
             <a id="moreApps-btn" onclick="more('open')">Ещё</a>
@@ -157,7 +157,16 @@
           <div class="footer-bottom-right">
             <a class="footer-bottom-right-text" href="https://www.google.com/intl/ru_by/policies/privacy/?fg=1">Конфиденциальность</a>
             <a class="footer-bottom-right-text" href="https://www.google.com/intl/ru_by/policies/terms/regional.html">Условия</a>
-            <a class="footer-bottom-right-text" href="https://www.google.com/preferences?hl=ru">Настройки</a>
+            <span>
+              <a class="footer-bottom-right-text" onclick = 'settings()'>Настройки</a>
+              <div class="settings">
+                <a class="option" href="https://www.google.by/preferences?hl=ru-BY&fg=1">Настройки поиска</a>
+                <a class="option" href="https://www.google.by/advanced_search?hl=ru-BY&fg=1">Расширенный поиск</a>
+                <a class="option" href="https://myactivity.google.com/myactivity?hl=ru-BY&fg=1">История</a>
+                <a class="option" href="https://support.google.com/websearch#topic=3378866">Справка по поиску</a>
+                <a class="option" href="https://support.google.com/photos/answer/6156065?hl=ru&ref_topic=6156079">Отправить отзыв</a>
+              </div>
+            </span>
           </div>
         </div>
       </footer>

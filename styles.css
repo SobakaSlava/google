@@ -5,10 +5,11 @@ html{
 }
 header {
     height: 40px;
-    position: absolute;
-    top: 16px;
-    right: 15px;
+    position: relative;
+    top: -455px;
+    right: 7px;
     width: 100%;
+    min-width: 980px;
 }
 #appsimg {
     margin-left: 15px;
@@ -16,7 +17,6 @@ header {
     opacity: .55;
     height: 30px;
     width: 30px;
-
 }
 #appsimg:hover {
     opacity: .85;
@@ -71,6 +71,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 980px;
 }
 main {
     position: absolute;
@@ -182,6 +183,7 @@ footer {
     background: #f2f2f2;
     padding: 0;
     height: 83px;
+    min-width: 980px;
 }
 .footer-bottom {
     display: flex;
@@ -193,6 +195,7 @@ footer {
 }
 .footer-bottom-right {
     padding-right: 30px;
+    height: 40px;
 }
 .footer-bottom-right-text {
     padding-left: 23px;
@@ -282,13 +285,11 @@ footer {
     cursor: pointer;
 }
 .apps-div {
+    display: none;
     border: 1px solid #ccc;
-    background-color: white;
-    z-index: 9;
     position: absolute;
     top: 44px;
     right: 15px;
-    display: none;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     height: 496px;
 }
@@ -344,16 +345,10 @@ footer {
 #keepapp {
     background: url("./img/keep.png") 0 1px;
 }
-#earth {
-    width: 84px;
-}
 #earthapp {
     background-position: 0 -965px;
     height: 64px;
     text-overflow: ellipsis;
-}
-#earth:hover {
-    height: 102px;
 }
 #earth-text {
     white-space: nowrap;
@@ -361,25 +356,31 @@ footer {
     text-overflow: ellipsis;
     text-align: left;
 }
-#earth:hover .apps-txt {
+#earth {
+    width: 84px;
+}
+#earth:hover {
+    height: 102px;
+}
+#earth:hover #earthapp {
+    position: relative;
+    /*top: 1px;*/
+}
+#earth:hover #other-services {
+    top: 12px;
+}
+#earth:hover #earth-text {
     overflow: visible;
     white-space: normal;
     text-align: center;
     line-height: 1.5;
-}
-#earth:hover #earthapp {
-    position: relative;
-    top: 1px;
-}
-#earth:hover #other-services {
-    top: 12px;
 }
 #other-services-btn {
     font-size: 13px;
     color: rgba(0,0,0,0.87);
     justify-content: center;
     position: relative;
-    top: 41px;
+    top: 2px;
     right: 1px;
     margin-bottom: -14px;
 }
@@ -400,4 +401,29 @@ footer {
     text-overflow: ellipsis;
     overflow: hidden;
     width: 84px;
+}
+.settings {
+    display: none;
+    background-color: white;
+    position: relative;
+    bottom: 282px;
+    left: 140px;
+    flex-direction: column;
+    border: 1px solid #999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    width: 183px;
+    height: 230px;
+}
+.option {
+    color: #777;
+    font-size: 13px;
+    padding: 0 20px;
+    margin: 2px 10px 0 10px;
+    line-height: 44px;
+}
+.option:hover {
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
 }

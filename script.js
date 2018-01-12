@@ -35,11 +35,13 @@ function appsStatusChange() {
 }
 
 function more (mode) {
+  clickOnMore = true;
   let moreBtn = document.getElementById("moreApps-btn");
   let appsSheet = document.getElementById("appsSheet");
   let moreAppsSheet = document.getElementById('moreAppsSheet');
   let otherServices = document.getElementById('other-services');
   if (mode == 'close') {
+    isMoreVisible = false;
     moreBtn.style.display = 'flex';
     moreAppsSheet.style.display = 'none';
     appsSheet.style.overflowY = 'hidden';
@@ -47,6 +49,7 @@ function more (mode) {
     otherServices.style.display = 'none';
   }
   if (mode == 'open') {
+    isMoreVisible = true;
     moreBtn.style.display = 'none';
     appsSheet.style.overflowY = 'scroll';
     appsSheet.style.height = '440px';
@@ -58,3 +61,29 @@ function more (mode) {
   }
 }
 
+function clickout () {
+  if (isAppsVisible && !clickOnApps && !clickOnMore) {
+    appsStatusChange();
+  }
+  else {
+    clickOnApps = false;
+    clickOnMore = false;
+  }
+  if (settingsVisible && !clickOnSettings) {
+    settings();
+  }
+  else {
+    clickOnSettings = false;
+  }
+}
+function settings() {
+  clickOnSettings = true;
+  isSettingsVisible = !isSettingsVisible;
+  let settingsBlock = document.getElementById('settings');
+  if (isSettingsVisible) {
+    settingsBlock.style.display = 'flex';
+  }
+  else {
+    settingsBlock.style.display = 'none';
+  }
+}
